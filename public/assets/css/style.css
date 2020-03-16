@@ -25,3 +25,8 @@ li {
     position: relative;
     float: right;
 }
+
+button {
+    color: orange;
+    border-radius: 1px solid black;
+}

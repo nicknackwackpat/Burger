@@ -9,7 +9,7 @@ $(function() {
         devoured: newDevoured
       };
 
-      $.ajax("/api/burgers/" + id, {
+      $.ajax("/api/burger/" + id, {
         type: "PUT",
         data: newDevouredState
       }).then(
@@ -26,12 +26,11 @@ $(function() {
         name: $("#burgerName").val().trim(),
       };
   
-      $.ajax("/api/burgers", {
+      $.ajax("/api/burger", {
         type: "POST",
         data: newBurger
       }).then(
         function() {
-          console.log("created new burger");
           location.reload();
         }
       );
