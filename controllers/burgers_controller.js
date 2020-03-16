@@ -23,10 +23,10 @@ router.get("/", function (req, res) {
     });
   });
 
-  router.put("/api/burger/:id", function (req, res) {
+  router.put("/api/burgers/:id", function (req, res) {
     let condition = "id = " + req.params.id;
 
-    burger.updateOne({
+    burgerModel.updateOne({
         devoured: req.body.devoured
     }, condition, function (result) {
         if (result.changedRows == 0) {
