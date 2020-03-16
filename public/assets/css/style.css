@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    padding: 5px 5px;;
+    margin: 10px;
+}
+
+h2 {
+    font-family: 'Bellota Text', cursive;
+}
+
+ul {
+    padding: 5px;
+    float: left;
+}
+
+li {
+    display: flexbox;
+    position: relative;
+    float: right;
+}
